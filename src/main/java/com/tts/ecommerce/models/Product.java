@@ -13,6 +13,7 @@ public class Product {
 
     private String name;
 
+    private int quantity;
     
     private String category;
 
@@ -21,6 +22,8 @@ public class Product {
     private String price;
 
     private String description;
+
+    private String image;
 
 
     public Product() {
@@ -83,11 +86,30 @@ public class Product {
         this.description = description;
     }
 
+    public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
     @Override
     public String toString() {
         return "Product [brand=" + brand + ", category=" + category + ", description=" + description + ", id=" + id
                 + ", name=" + name + ", price=" + price + "]";
     }
+
+
 
     
     
