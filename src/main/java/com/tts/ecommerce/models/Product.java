@@ -25,20 +25,28 @@ public class Product {
 
     private String image;
 
+    
+	public Product() {
+	}
 
-    public Product() {
-    }
+	public Product(Long id, String name, int quantity, String category, String brand, String price, String description,
+			String image) {
+		this.id = id;
+		this.name = name;
+		this.quantity = quantity;
+		this.category = category;
+		this.brand = brand;
+		this.price = price;
+		this.description = description;
+		this.image = image;
+	}
 
-    public Product(Long id, String name, String category, String brand, String price, String description) {
-        this.id = id;
-        this.name = name;
-        this.category = category;
-        this.brand = brand;
-        this.price = price;
-        this.description = description;
-    }
 
-    public Long getId() {
+    public Product(int i, float f, String string, String string2, String string3, String string4, String string5) {
+	}
+
+
+	public Long getId() {
         return id;
     }
 
@@ -108,6 +116,9 @@ public class Product {
         return "Product [brand=" + brand + ", category=" + category + ", description=" + description + ", id=" + id
                 + ", name=" + name + ", price=" + price + "]";
     }
+
+
+
 
 
 
