@@ -26,8 +26,6 @@ public class ProductController {
             return "product";
         }
  
-        // TODO: Either implement admin controls or remove these methods.
- 
         @RequestMapping(value = "/product", method = {RequestMethod.POST, RequestMethod.PUT})
         public String createOrUpdate(@Valid Product product) {
             productService.save(product);
