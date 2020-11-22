@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RequestParam;
        @Autowired
        ProductService productService;
 
+
+
        public void addNew() {
         List<Product> allProducts = productService.findAll();
 
@@ -88,6 +90,8 @@ import org.springframework.web.bind.annotation.RequestParam;
        public String about() {
            return "about";
        }
+
+      
     }
    
 

@@ -18,9 +18,10 @@ public class ProductController {
         @Autowired
         ProductService productService;
  
-        @GetMapping("/product/{id}")
+        @GetMapping("/products/{id}")
         public String show(@PathVariable Long id, Model model) {
             Product product = productService.findById(id);
+            System.out.println("\n Product: " + product);
             model.addAttribute(product);
             return "product";
         }
